@@ -153,6 +153,13 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 250px; /* Đảm bảo tất cả card có cùng chiều rộng */
     text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hiệu ứng khi di chuột vào thẻ sản phẩm */
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Định dạng hình ảnh sản phẩm */
@@ -162,4 +169,3 @@ footer {
     object-fit: cover; /* Cắt ảnh để đảm bảo không méo */
     border-radius: 10px;
 }
-
